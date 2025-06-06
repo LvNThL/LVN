@@ -1,0 +1,161 @@
+/* ====== PAGE STRUCTURE ====== */
+
+/* --- Main Content Wrapper --- */
+.page-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto; /* Fills available space */
+  padding-right: var(--padding-right-left);
+  padding-left: var(--padding-right-left);
+  margin-bottom: var(--page-margin-auto);
+  box-sizing: border-box;
+  min-height: 0;
+}
+
+/* ====== HEADER & SECTION UTILITIES ====== */
+
+/* --- Header Wrapper --- */
+.header-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  margin-top: var(--margin-top-bottom);
+  margin-bottom: var(--margin-top-bottom);
+  padding-right: var(--padding-right-left);
+  padding-left: var(--padding-right-left);
+}
+
+/* --- Header Title --- */
+.header-title {
+  display: flex;
+  font-size: 3rem;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; 
+  margin-top: var(--margin-top-bottom);
+  margin-bottom: var(--margin-top-bottom);
+  padding-right: var(--padding-right-left);
+  padding-left: var(--padding-right-left);
+}
+
+/* --- Header Symbol --- */
+.header-symbol {
+  font-size: 3.25rem;
+  text-align: baseline;
+}
+
+/* --- Header Tagline --- */
+.header-tagline {
+  font-size: 1rem;
+  display: block;
+  text-align: center;
+  padding-right: var(--padding-right-left);
+  padding-left: var(--padding-right-left);
+  margin-bottom: 1rem;
+}
+
+/* --- Heartbeat Container --- */
+.heartbeat-container {
+  display: flex;
+  flex: 1 0 auto;
+  height: 100%;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding-right: var(--padding-right-left);
+  padding-left: var(--padding-right-left);
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+/* --- Paragraph Container --- */
+.paragraph-container {
+  display: flex;
+  flex: 1 0 auto;
+  font-size: 0.75rem;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding-right: var(--padding-right-left);
+  padding-left: var(--padding-right-left);
+  margin-top: var(--margin-top-bottom);
+  margin-bottom: var(--margin-top-bottom);
+}
+
+/* --- Links Container --- */
+.links-container {
+  display: flex;
+  flex: 1 0 auto;
+  font-size: .75rem;
+  justify-content: center;
+  text-align: center;
+  align-items: top;
+  padding-right: var(--padding-right-left);
+  padding-left: var(--padding-right-left);
+  margin-top: var(--margin-top-bottom);
+  margin-bottom: var(--margin-top-bottom);
+}
+
+/* --- Unordered List --- */
+.unordered-list {
+  display: flex;
+  flex-direction: column;
+  padding-right: var(--padding-right-left);
+  padding-left: var(--padding-right-left);
+  margin-top: var(--margin-top-bottom);
+  margin-bottom: var(--margin-top-bottom);
+}
+
+/* --- List Item --- */
+li {
+  display: flex;
+  flex-direction: column;
+  margin-top: var(--margin-top-bottom);
+  margin-bottom: var(--margin-top-bottom);
+}
+
+/* --- Action Button Group --- */
+.action-btn-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 2rem;
+  padding-right: var(--padding-right-left);
+  padding-left: var(--padding-right-left);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.action-btn-group .button {
+  width: 200px; 
+  min-width: 200px;
+  max-width: 200px;
+  height: 100%;
+}
+
+/* --- Back Link Container --- */
+.back-link-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  padding-right: var(--padding-right-left);
+  padding-left: var(--padding-right-left);
+  margin-top: 5rem;
+  margin-bottom: var(--margin-top-bottom);
+}
+
+/* --- Bottom Divider --- */
+.bottom-divider {
+  padding-right: var(--padding-right-left);
+  padding-left: var(--padding-right-left);
+  margin-top: var(--margin-top-bottom);
+  margin-bottom: 1rem;
+}
+
+
+
+

@@ -1,0 +1,67 @@
+/* ====== BASE STYLES ====== */
+
+/* --- Box-sizing Reset --- */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* --- HTML & Body Reset --- */
+html, body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: 200px;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-main);
+  background: var(--color-bg);
+  color: var(--color-teal);
+}
+
+/* --- List Reset --- */
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* --- Remove Blue Highlight and Focus Ring for Mobile --- */
+a, button, input, textarea, select, summary, [tabindex] {
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent;
+  box-shadow: none !important;
+}
+
+/* --- Remove Focus Styles for Nav Links, Menu Button, Back Links, etc. --- */
+.navbar-link:focus,
+.menu-icon:focus,
+.back-to-home-link:focus,
+a:focus,
+button:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* --- Remove Focus Styles for Active State as well --- */
+.navbar-link:active,
+.menu-icon:active,
+.back-to-home-link:active,
+a:active,
+button:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

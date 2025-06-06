@@ -1,0 +1,74 @@
+/* ====== BUTTON STYLES ====== */
+
+/* --- Base Button Styles --- */
+button {
+  font-family: var(--font-main);
+  cursor: pointer;
+  background: none;
+  border: none;
+  overflow: hidden;
+  border-radius: 2rem;
+
+}
+
+/* --- Button Hover and Active States --- */
+button.button-primary:hover {
+  filter: drop-shadow(0 0 4px var(--color-teal));
+}
+button.button-secondary:hover {
+  filter: drop-shadow(0 0 4px var(--color-teal));
+}
+button:active {
+  transform: scale(0.95);
+}
+button {
+  filter: drop-shadow(0 0 4px var(--color-teal));
+}
+
+/* ====== PRIMARY BUTTON ====== */
+.button-primary {
+  background: var(--color-teal, var(--color-teal)); /* Fallback for undefined variable */
+  color: var(--color-purple, var(--color-purple));
+  box-shadow: 0 0 24px var(--color-teal, var(--color-teal)),
+              0 0 8px var(--color-purple, var(--color-purple));
+}
+
+.button-primary.active {
+  background: var(--color-purple, var(--color-purple));
+  color: var(--color-teal, var(--color-teal));
+  box-shadow: 0 0 24px var(--color-teal, var(--color-teal)),
+              0 0 8px var(--color-purple, var(--color-purple));
+}
+
+/* ====== SECONDARY BUTTON ====== */
+.button-secondary {
+  background: var(--color-purple, var(--color-purple));
+  color: var(--color-teal, var(--color-teal));
+  box-shadow: 0 0 24px var(--color-purple, var(--color-purple)),
+              0 0 8px var(--color-teal, var(--color-teal));
+}
+
+.button-secondary.active {
+  background: var(--color-teal, var(--color-teal));
+  color: var(--color-purple, var(--color-purple));
+  box-shadow: 0 0 24px var(--color-purple, var(--color-purple)),
+              0 0 8px var(--color-teal, var(--color-teal));
+}
+
+/* --- Button Color Change Fast --- */
+.button-primary:active {
+  background: var(--color-purple, var(--color-purple));
+  color: var(--color-teal, var(--color-teal));
+  box-shadow: 0 0 24px var(--color-teal, var(--color-teal)),
+              0 0 8px var(--color-purple, var(--color-purple));
+}
+
+.button-secondary:active {
+  background: var(--color-teal, var(--color-teal));
+  color: var(--color-purple, var(--color-purple));
+  box-shadow: 0 0 24px var(--color-purple, var(--color-purple)),
+              0 0 8px var(--color-teal, var(--color-teal));
+}
+
+
+

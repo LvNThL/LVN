@@ -1,0 +1,57 @@
+/* ====== NAVBAR EFFECTS ====== */
+.navbar-link {
+  text-decoration: none;
+  color: var(--color-purple);
+}
+
+.navbar-link:hover, 
+.navbar-link:active {
+  filter: drop-shadow(0 0 4px var(--color-teal));
+  color: var(--color-teal);
+  outline: none;
+}
+
+.navbar-link .text-teal {
+  color: var(--color-purple);
+}
+
+.navbar-link:hover .text-teal,
+.navbar-link:active .text-teal {
+  color: var(--color-teal);
+  outline: none;
+}
+
+/* ====== BACKLINK EFFECTS ====== */
+.back-link {
+  text-decoration: none;
+  color: var(--color-purple);
+}
+
+.back-link:hover, 
+.back-link:active {
+  filter: drop-shadow(0 0 4px var(--color-teal));
+  color: var(--color-teal);
+  outline:none;
+}
+
+/* ====== HYPERLINK EFFECTS ====== */
+.hyper-link {
+  text-decoration: none;
+  color: var(--color-teal);
+}
+
+.hyper-link:hover, 
+.hyper-link:active {
+  color: var(--color-purple);
+  outline: none;
+}
+
+/* ====== HAMBURGER MENU ICON EFFECTS ====== */
+.menu-icon:active .menu-icon-bar {
+  background: var(--color-teal);
+}
+
+/* ====== TEXT COLOR CLASSES ====== */
+.text-purple { color: var(--color-purple); }
+.text-teal { color: var(--color-teal); }
+

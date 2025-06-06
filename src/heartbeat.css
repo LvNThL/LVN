@@ -1,0 +1,44 @@
+/* ==================================================
+   SVG Container Styles
+   – Positions the SVG, sets dimensions & outer glow
+   ================================================== */
+.heartbeat-svg {
+  left: 0;                          
+  width: 100%;         
+  height: 100%;                   
+  transform: scaleY(2.5);     
+  overflow: visible;               
+  shape-rendering: auto;              
+  vector-effect: non-scaling-stroke;
+  padding-right: var(--padding-right-left);
+  padding-left: var(--padding-right-left);
+  margin-top: var(--margin-top-bottom);
+  margin-bottom: var(--margin-top-bottom);   
+}
+
+/* ==================================================
+   Heartbeat Line Styles
+   – Dash settings, animation and per-line glow
+   ================================================== */
+#heartbeat-path {
+  stroke-dasharray: 1200 1200;       
+  stroke-dashoffset: 0;          
+  animation: heartbeat-ecg-line 4.5s linear infinite; 
+  stroke-width: 1px;                
+  stroke-linecap: round;              
+  stroke: var(--color-purple);    
+  shape-rendering: auto;               
+  vector-effect: non-scaling-stroke;
+
+}
+
+/* ==================================================
+   Keyframes: Heartbeat ECG Line
+   – Controls dashOffset, opacity & glow over time
+   ================================================== */
+@keyframes heartbeat-ecg-line {
+  from { stroke-dashoffset: 0; }
+  to   { stroke-dashoffset: -2400; } /* move by exactly one dash */
+}
+
+

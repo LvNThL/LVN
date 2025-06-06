@@ -1,0 +1,168 @@
+/* ====== MEDIA QUERIES (MOBILE-FIRST) (MIN-WIDTH) ====== */
+
+/* ====== >= 500px ====== */
+@media (min-width: 500px) {
+  :root {
+
+  }
+
+}
+
+/* ====== >= 600px ====== */
+@media (min-width: 600px) {
+  :root {
+
+    .navbar-links {
+      gap: 1.75rem;
+    }
+    .action-btn-group .button {
+      width: 200px; 
+      min-width: 200px;
+      max-width: 200px;
+      height: 40px;
+    }
+
+  }
+
+}
+
+/* ====== >= 700px ====== */
+@media (min-width: 700px) {
+  :root {
+
+    .navbar-links {
+      gap: 2.5rem;
+    }
+
+  }
+
+}
+
+/* ====== >= 800px ====== */
+@media (min-width: 800px) {
+  :root {
+
+    .navbar-links {
+      gap: 3.5rem;
+    }
+    
+  }
+
+}
+
+/* ====== >= 900px ====== */
+@media (min-width: 900px) {
+  :root {
+
+    .navbar-links {
+      gap: 4.5rem;
+    }
+
+  }
+
+}
+
+/* ====== >= 1000px ====== */
+@media (min-width: 1000px) {
+  :root {
+
+    .navbar-links {
+      gap: 5.5rem;
+    }
+
+  }   
+
+
+}
+
+/* ====== <= 600px (Mobile Styles) ====== */
+@media (max-width: 600px) {
+  /* --- Action Button Group --- */
+  .action-btn-group {
+    flex-direction: column;
+    flex-wrap: wrap; /* Allow stacking if not enough space */
+    align-items: stretch;
+    gap: 0.75rem;
+  }
+  .action-btn-group .button {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    font-size: 1rem; /* Decrease font size for stacked mobile buttons */
+    padding: 0.6rem 0.5rem; /* Decrease padding for stacked mobile buttons */
+  }
+
+  /* --- Heartbeat Path --- */
+  #heartbeat-path {
+    stroke-width: 1px !important;
+    stroke-dasharray: 300 300;
+    animation: heartbeat-ecg-line 15s linear infinite;
+    shape-rendering: auto !important;
+  }
+
+  /* --- Navbar & Hamburger --- */
+  .navbar {
+    justify-content: flex-start;
+  }
+  .navbar-links {
+    /* Initial styles for navbar-links from an earlier block */
+    justify-content: flex-start;
+    align-items: flex-start; /* This will be overridden by a later .navbar-links rule */
+    gap: 1.5rem;
+  }
+  .menu-icon {
+    display: flex;
+  }
+
+  /* --- Navbar Brand & First Link --- */
+  .navbar-links li:first-child {
+    display: none;
+  }
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-right: auto;
+    z-index: 6001;
+  }
+
+  /* --- Mobile Dropdown Menu --- */
+  .navbar-links {
+    /* Styles for mobile dropdown behavior, overrides/augments previous .navbar-links styles */
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background: var(--color-bg);
+    flex-direction: column;
+    align-items: center; /* Overrides align-items: flex-start */
+    gap: 1.5rem; /* Repeated from above, kept for structural integrity */
+    padding: 1.5rem 0;
+    z-index: 5001;
+    border-bottom: 2px solid var(--color-purple);
+  }
+  .navbar-links.navbar-links--open {
+    display: flex;
+  }
+
+  /* --- List Item Font Size --- */
+  li {
+    font-size: 1rem;
+  }
+  button {
+    filter: drop-shadow(0 0 4px var(--color-teal));
+  }
+  button.button-primary:hover {
+    filter: drop-shadow(0 0 4px var(--color-teal));
+  }
+  button.button-secondary:hover {
+    filter: drop-shadow(0 0 4px var(--color-teal));
+  }
+
+}
+
+
+
+
+

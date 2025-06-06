@@ -1,0 +1,47 @@
+/* ====== NAVBAR STYLES ====== */
+
+/* ====== NAVBAR CONTAINER ====== */
+.navbar {
+  z-index: 5000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-bg);
+  height: 50px;
+  padding-right: var(--padding-right-left);
+  padding-left: var(--padding-right-left);
+  margin-top: var(--margin-top-bottom);
+  margin-bottom: var(--margin-top-bottom);
+  position: relative;
+}
+
+/* ====== NAVBAR BRAND (LOGO) ====== */
+.navbar-brand {
+  display: none; /* Hide by default, show only on mobile */
+}
+
+/* ====== NAVBAR LINKS ====== */
+.navbar-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding-right: var(--padding-right-left);
+  padding-left: var(--padding-right-left);
+  margin-top: var(--margin-top-bottom);
+  margin-bottom: var(--margin-top-bottom);
+}
+
+/* ====== NAVBAR BORDER ====== */
+.navbar-border {
+  margin-bottom: var(--margin-top-bottom);
+  border-bottom: 2px solid var(--color-purple);
+}
+
+
+
+
+
+
+
+
