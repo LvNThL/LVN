@@ -1,0 +1,38 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <!-- Dark background circle -->
+  <circle cx="256" cy="256" r="250" fill="#121212" />
+  
+  <!-- Outer glow ring -->
+  <circle cx="256" cy="256" r="230" fill="none" stroke="#af00ff" stroke-width="4" opacity="0.7" />
+  
+  <!-- Inner glow ring -->
+  <circle cx="256" cy="256" r="210" fill="none" stroke="#6cffe6" stroke-width="3" opacity="0.8" />
+  
+  <!-- Text with glow effects -->
+  <g>
+    <!-- Purple glow effect -->
+    <text x="256" y="290" font-family="Arial, sans-serif" font-weight="bold" font-size="120" 
+          text-anchor="middle" fill="#af00ff" filter="url(#purpleGlow)">LVN</text>
+    
+    <!-- Teal glow effect -->
+    <text x="256" y="290" font-family="Arial, sans-serif" font-weight="bold" font-size="120" 
+          text-anchor="middle" fill="#6cffe6" filter="url(#tealGlow)">LVN</text>
+    
+    <!-- Main text -->
+    <text x="256" y="290" font-family="Arial, sans-serif" font-weight="bold" font-size="120" 
+          text-anchor="middle" fill="white">LVN</text>
+  </g>
+  
+  <!-- Filters for glow effects -->
+  <defs>
+    <filter id="purpleGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feComposite in="blur" operator="over" />
+    </filter>
+    
+    <filter id="tealGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="blur" operator="over" />
+    </filter>
+  </defs>
+</svg>
